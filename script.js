@@ -13,7 +13,7 @@ console.log(randomNum)
 
 
 // Listen for the click event on the check button
-btn.addEventListener('click', ()=>{
+btn.onclick = () => {
 
     chance--;
 
@@ -61,8 +61,8 @@ btn.addEventListener('click', ()=>{
     btn.onclick = function(){
         window.location.reload()
     }
+  }
 }
-})
 
 
 
