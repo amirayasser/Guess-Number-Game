@@ -1,7 +1,7 @@
 // Get the DOM elements and initialize the game
 const input = document.getElementsByTagName('input')[0],
     guess = document.getElementsByClassName('guess')[0],
-    btn = document.getElementsByTagName('button')[0],
+    btn = document.getElementById('btn'),
     remainingChances = document.querySelector('.chances')
 
 // Set the focus on input field
