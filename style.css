@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    background-color: #8d05de;
+    color: #fff;
+    text-align: center;
+    padding: 30px 40px;
+    border-radius: 15px;
+}
+
+.wrapper header {
+    font-size: 20px;
+    font-weight: 400;
+    color: beige;
+}
+
+.guess {
+    margin: 10px 0;
+    padding: 6px 14px;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+.guess.win{
+    background-color: rgb(128 216 10);
+}
+.guess.fail{
+    background-color: rgb(216, 10, 96);
+}
+.input-field {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+
+.input-field input,
+.input-field button {
+    width: calc(100% / 2 - 25px);
+    outline: none;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.input-field input{
+    text-align: center;
+    width: 100px;
+    border: 5px solid #cb8bee;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    display: none;
+}
+
+.input-field input:disabled {
+    cursor: not-allowed;
+}
+
+.input-field button{
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #8d05de;
+    transition: 0.3s;
+}
+
+.input-field button:active {
+    transform: scale(0.95);
+}
+
+.input-field button:hover{
+        box-shadow: 0 0 3px 3px #cb8bee inset;
+}
